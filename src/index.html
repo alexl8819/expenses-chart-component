@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="../node_modules/@fontsource/dm-sans/400.css">
+  <link rel="stylesheet" href="../node_modules/@fontsource/dm-sans/700.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="flex flex-wrap justify-center items-center min-h-screen font-dm-sans bg-cream">
+    <div class="w-full max-w-xs lg:max-w-md">
+      <div class="flex flex-row justify-end py-2 px-1">
+        <p class="text-xs text-medium-brown">Click the logo to add custom data</p>
+      </div>
+      <header class="flex flex-col rounded-xl bg-soft-red py-4 px-6 mb-4">
+        <div class="flex flex-row justify-between items-center">
+          <div class="flex flex-col text-very-pale-orange">
+            <p class="text-xs mb-1">My balance</p>
+            <h2 class="text-lg font-bold">$921.48</h2>
+          </div>
+          <button type="button">
+            <img class="w-14 h-10" src="./images/logo.svg" alt="logo" />
+          </button>
+        </div>
+      </header>
+      <div id="custom-input-field" class="hidden flex flex-row rounded-xl bg-medium-brown py-4 px-6 mb-4">
+        <div class="flex flex-col p-3.5">
+          <label for="file-input" class="text-xs text-very-pale-orange cursor-pointer">
+            Select a <span class="font-bold">json</span> file 
+            with structure below (14 elements max): <code class="block mt-1">[{ "day": "mon", "amount": 24.32 }...]</code>
+          </label>
+          <input class="hidden" name="file-input" type="file" accept=".json" />
+          <p class="hidden text-red-700 mt-2">
+            Error: <span></span>
+          </p>
+        </div>
+      </div>
+      <div class="bg-very-pale-orange rounded-xl py-6 px-3 lg:px-6">
+        <section class="flex flex-col">
+          <h1 class="text-2xl text-dark-brown font-bold pl-1 mb-2 lg:mb-4">Spending - Last 7 days</h1>
+          <div class="h-48 lg:h-52 cursor-pointer">
+            <canvas></canvas>
+          </div>
+          <div class="h-1 mx-2 border-b"></div>
+        </section>
+        <div class="flex flex-row justify-between items-center pt-6 px-2">
+          <div class="flex flex-col text-left">
+            <p class="text-xs text-medium-brown">Total this month</p>
+            <h1 class="text-2xl lg:text-3xl text-dark-brown font-bold mt-1">$478.33</h1>
+          </div>
+          <div class="flex flex-col text-right pt-4">
+            <p class="text-sm font-bold">+2.4%</p>
+            <p class="text-xs text-medium-brown">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">slightlyfunctional</a>.
+  </footer>
+  <script type="module" src="expenses.js"></script>
+</body>
+</html>
