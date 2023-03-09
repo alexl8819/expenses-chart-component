@@ -11,9 +11,7 @@
   "author": "slightlyfunctional",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "cssnano": "^5.1.14",
     "parcel": "^2.8.3",
-    "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
