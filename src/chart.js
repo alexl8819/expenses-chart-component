@@ -63,7 +63,7 @@ function generateConfig (dataset) {
     options: {
       layout: {
         padding: {
-          top: 22,
+          top: 32,
           bottom: 10
         }
       },

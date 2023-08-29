@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="description" content="">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
@@ -18,15 +18,15 @@
 </head>
 <body>
   <main class="flex flex-wrap justify-center items-center min-h-screen font-dm-sans bg-cream">
-    <div class="w-full max-w-xs lg:max-w-md">
+    <div class="w-full max-w-xs lg:max-w-lg">
       <div class="flex flex-row justify-end py-2 px-1">
         <p class="text-xs text-medium-brown">Click the logo to use custom data</p>
       </div>
-      <header class="flex flex-col rounded-xl bg-soft-red py-4 px-6 mb-4">
+      <header class="flex flex-col rounded-xl bg-soft-red py-6 px-6 mb-4">
         <div class="flex flex-row justify-between items-center">
           <div class="flex flex-col text-very-pale-orange">
-            <p class="text-xs mb-1">My balance</p>
-            <h2 class="text-lg font-bold">$921.48</h2>
+            <p class="text-xs lg:text-base mb-1">My balance</p>
+            <h2 class="text-lg lg:text-3xl font-bold">$921.48</h2>
           </div>
           <button type="button">
             <img class="w-14 h-10" src="./images/logo.svg" alt="logo" />
@@ -45,30 +45,30 @@
           </p>
         </div>
       </div>
-      <div class="bg-very-pale-orange rounded-xl py-6 px-3 lg:px-6">
+      <div class="bg-very-pale-orange rounded-2xl py-6 px-3 lg:px-6">
         <section class="flex flex-col">
-          <h1 class="text-2xl text-dark-brown font-bold pl-1 mb-2 lg:mb-4">Spending - Last 7 days</h1>
-          <div class="h-48 lg:h-52 cursor-pointer">
+          <h1 class="text-2xl lg:text-3xl text-dark-brown font-bold pl-1 mb-2 lg:mb-4">Spending - Last 7 days</h1>
+          <div class="h-48 cursor-pointer">
             <canvas></canvas>
           </div>
           <div class="h-1 mx-2 border-b"></div>
         </section>
-        <div class="flex flex-row justify-between items-center pt-6 px-2">
+        <div class="flex flex-row justify-between items-center py-6 px-2">
           <div class="flex flex-col text-left">
-            <p class="text-xs text-medium-brown">Total this month</p>
-            <h1 class="text-2xl lg:text-3xl text-dark-brown font-bold mt-1">$478.33</h1>
+            <p class="text-xs lg:text-lg text-medium-brown">Total this month</p>
+            <h1 class="text-2xl lg:text-5xl text-dark-brown font-bold mt-1">$478.33</h1>
           </div>
           <div class="flex flex-col text-right pt-4">
-            <p class="text-sm font-bold">+2.4%</p>
-            <p class="text-xs text-medium-brown">from last month</p>
+            <p class="text-sm lg:text-lg font-bold">+2.4%</p>
+            <p class="text-xs lg:text-lg text-medium-brown">from last month</p>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">slightlyfunctional</a>.
+    Challenge by <a class="font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="underline" href="#">alexl8819</a>.
   </footer>
   <script type="module" src="expenses.js"></script>
 </body>

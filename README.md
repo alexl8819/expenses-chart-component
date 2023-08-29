@@ -11,7 +11,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-- [Author](#author)
 
 ## Overview
 
@@ -27,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./screenshot.png)
+![Desktop Screenshot](./screenshot.png)
 
 ### Links
 
-- Live Site URL: [Expenses Chart Component](https://slightlyfunctional.gitlab.io/expenses-chart-component/)
+- Live Site URL: [Expenses Chart Component](https://alexl8819.github.io/expenses-chart-component/)
 
 ## My process
 
@@ -46,8 +45,3 @@ Users should be able to:
 ### What I learned
 
 First time using chart.js on a project. The documentation I feel could be improved as some features like customizing the labels were not as clear as I'd thought they would be. I also learned that the using workers was not ideal because you miss out on some key features like animations or interacting with the DOM (i.e clicks, mouseovers), which is a shame because I enjoy using web workers whenever possible.
-
-## Author
-
-- Website - [slightlyfunctional.com](https://slightlyfunctional.com)
-- Frontend Mentor - [@slightlyfunctional](https://www.frontendmentor.io/profile/slightlyfunctional)

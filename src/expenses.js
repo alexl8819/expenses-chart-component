@@ -63,7 +63,7 @@ function validateCustomData (dataset) {
   }
   for (const data of dataset) {
     const keys = Object.keys(data);
-    if (!'day' in keys || !'amount' in keys) {
+    if (!{}.hasOwnProperty.call(keys, 'day') || !{}.hasOwnProperty.call(keys, 'amount')) {
       throw new Error('Invalid keys found: Must be type str (day, amount)');
     }
     if (typeof data['day'] !== 'string') {

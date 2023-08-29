@@ -6,16 +6,20 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url ./ --dist-dir public"
+    "build": "parcel build --public-url ./ --dist-dir public",
+    "lint": "npx eslint src/*.{js,html} --max-warnings=0"
   },
-  "author": "slightlyfunctional",
+  "author": "alexl8819",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
+    "@angular-eslint/template-parser": "^16.1.1",
+    "@fontsource/dm-sans": "^5.0.9",
+    "eslint": "^8.47.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "parcel": "^2.8.3",
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
-    "@fontsource/dm-sans": "^4.5.9",
     "chart.js": "^4.2.0"
   }
 }
